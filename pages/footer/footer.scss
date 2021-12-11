@@ -1,0 +1,470 @@
+.footer {
+    height: 380px;
+    max-width: calc(100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: aqua;
+
+    &__wrap {
+        height: 100%;
+        width: calc(72vw);
+        border: none;
+        border-bottom: 2px solid lightgray;
+        background: none;
+        // background: rgb(3, 149, 207);
+    }
+    &__topbar {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        background: #3b2b2f;
+    }
+    &__findastore {
+        height: 70%;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 20px;
+        // background: lightgreen;
+    }
+    .fa-map-marker-alt {
+        font-size: 22px;
+        color: #fff;
+        // background: olive;
+    }
+    .fa-circle {
+        color: lightgray;
+        font-size: 6px;
+        padding: 17px;
+        // background: olive;
+    }
+    h3 {
+        margin: 0;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        // background: tomato;
+    }
+    &__followus {           //applies to two elems
+        height: 70%;
+        width: 220px;
+        margin: 0 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: aquamarine;
+    }
+    .fab {
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    // footer information (larger section)
+    &__infosect {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: orange;
+
+        a {                             //this targets all a tags in footer
+            font-size: 12px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 13px;
+            color: #000;
+        }
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color:#000;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;         //pushes down underline!
+        }
+        h1 {
+            // color: red;
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+    }
+    &__rowA {                           //first collumn begins  row a
+        height: 100%;
+        width: 25%;
+        // background: palevioletred;
+    }
+        &__shop {                       //shop
+            width: 100%;
+            height: 40%;
+            // background: pink;
+        }
+        &__shopanchorwrap {
+            max-width: 40%;
+            height: 60px;
+            // background: yellow;
+        }
+        &__orders {                       //orders
+            width: 100%;
+            height: 55%;
+            // background: lightyellow;
+        }
+        &__ordersanchorwrap {
+            max-width: 40%;
+            height: 100px;
+            // background: yellow;
+        }                               //first collumn ends  row a
+    
+    &__rowB {                       //second collumn begins  row b
+        height: 100%;
+        width: 25%;
+        // background: peachpuff;
+    }
+        &__helpful {                //helpful info
+            width: 100%;
+            height: 95%;
+            // background: green;
+        }
+        &__helpfulanchorwrap {
+            width: 230px;
+            height: 85%;
+            // background: yellow;
+        }
+    
+        &__rowC {                       //third collumn begins  row c
+            height: 100%;
+            width: 25%;
+            // background: plum;
+        }
+            &__about {                //about info
+                width: 100%;
+                height: 95%;
+                // background: lime;
+            }
+            &__aboutanchorwrap {
+                width: 230px;
+                height: 85%;
+                // background: yellow;
+            }
+                                        //SHIFT TAB goes back! - highlight section = easy
+        &__rowD {                       //fourth collumn begins  row d
+            height: 100%;
+            width: 25%;
+            // background: orange; 
+        }
+            &__join {                //join info
+                width: 100%;
+                height: 50%;
+                border: none;
+                border-bottom: 2px solid lightgray;
+                background: none;
+                // background: aquamarine;
+            }
+            &__joinsection {
+                width: 100%;
+                height: 85%;
+                // background: royalblue;
+            }
+            &__jointext {
+                // background: wheat;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+            //button - email
+            &__form {
+                width: 100%;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background: indianred;
+            }
+            &__emailInput {
+                height: 100%;
+                width: 170px;
+                color: #000;
+                border: 2px solid lightgray;
+                border-radius: 5px 0 0 5px;
+                padding: 10px;
+                // background: yellow;
+            }
+            &__signUpBtn {
+                height: 100%;
+                width: 80px;
+                border: 2px solid gold;
+                border-radius: 0 5px 5px 0;
+                background: #fff;
+            }
+            &__country { 
+                margin-top: 30px;                       //select country section
+                height: 60%;
+                width: 100%;
+                // background: tomato;
+
+                h1 {
+                    text-transform: capitalize;
+                    // background: pink;
+                    // color: aquamarine;
+                }
+            }
+            &__selectcountry {
+                width: 60%;
+                height: 50px;
+                background-image: url('../assets/images/selectcountry.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                // background: thistle;
+            }
+
+    &__copy {                                //copyright
+        width: 70%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        // background: tomato;
+
+        p {         //affects all p's
+            font-size: 11px;
+            font-style: italic;
+            color: rgb(139, 139, 139);
+        }
+    }
+    &__copywrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        // background: greenyellow;
+    }
+    &__copyanchors {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: turquoise;
+
+        p {         //affects legal p's
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// hidden footer 
+.hidfooter {
+    // margin-top: 300px;          //remove when done
+    height: 250px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 12px;
+    display: none;      //this hides it until we resize
+    background: brown;
+
+    &__brownarea {
+        height: 230px;
+        width: 100%;
+        display: inline;
+        align-items: center;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 14px;
+        background: rgb(116, 73, 45);
+    }
+    &__find {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 3px;
+        background: #3b2b2f;
+    }
+    &__support {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 3px;
+        background: #3b2b2f;
+    }
+    &__social {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #3b2b2f;
+    }
+    &__icons {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+    // white area begins
+
+.whitearea {
+    width: 100%;
+    height: auto;
+    display: none;      //this hides it until we resize
+    // color: aqua;
+    // margin-top: 20px;
+    // background: tomato;
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    &__shop {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+        // background: mediumturquoise;
+    }
+    &__orders {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+        // background: mediumturquoise;
+    }
+    &__helpful {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+        // background: mediumturquoise;
+    }
+    &__about {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+        // background: mediumturquoise;
+    }
+
+    //join section
+    &__join {
+        margin-top: 20px;
+        width: 100%;
+        min-height: 200px;
+        // background: green;
+    }
+    &__jointext {
+        text-align: left;
+        padding: 10px;
+    }
+    &__joinButtons {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        // background: fuchsia;
+
+        input {             //your email
+            height: 100%;
+            width: 70%;
+            background: none;
+            border-radius: 5px 0 0 5px;
+            border: 3px solid lightgray;
+        }
+        button {            //sign up
+            height: 100%;
+            width: 20%;
+            border-radius: 0 5px 5px 0;
+            border: 3px solid gold;
+            // background: powderblue;
+        }
+        ::placeholder {
+            color: lightgray;
+            padding: 0 10px;
+        }
+    }
+
+    //select country
+    &__country {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: powderblue;
+
+        .countryimg {
+            width: 180px;
+            height: 40px;
+            // background: aqua;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('../assets/images/selectcountry.png');
+        }
+    }
+
+    &__copyright {
+        color: lightgray;
+        font-size: 12px;
+    }
+
+}
+
+
+// tablet
+@media only screen and (max-width: 1200px) {
+    .footer {
+        display: none;
+        // &__infosect {
+        //     // background: rosybrown;
+        // }
+    }
+
+    // other footer
+    .hidfooter {
+        visibility: unset;        //ughghh why is this huge 
+        display: unset;
+    }
+    .whitearea {
+        display: unset;
+        visibility: unset;
+    }
+}
+
+// phone
+@media only screen and (max-width: 550px) {
+    
+}

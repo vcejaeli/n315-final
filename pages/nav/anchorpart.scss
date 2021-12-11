@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #fff;
+    --overlay-color: rgba(24,39,51,0.85);
+    --menu-speed: 0.75s;
+}
+
+
+.anchorpart {
+    height: 40px;
+    width: 100%;
+    // background: olive;
+
+    &__nav {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: tomato;
+
+        a {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            padding: 10px;      //for highlight
+            // background: white;   //for highlight
+            transition: .2s ease;
+        }
+        .coffeemakerlink {
+            color: rgb(138, 138, 138);
+        }
+        //tag for deals anchor
+        .dealscolor {
+            color: maroon;
+        }
+        .fa-tag {
+            color: maroon;
+        }
+
+        a:hover {
+            background: rgb(233, 233, 233);
+        }
+    }
+}
+
+.anchorparthidden {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: lightgrey;
+    // display: hidden;
+
+    .anchorparthiddentext {
+        height: 100%;
+        font-weight: bold;
+        margin-top: 15px;
+        cursor: pointer;
+        // background: greenyellow;
+    }
+}
+
+
+// tablet
+@media only screen and (max-width: 900px) {
+    .anchorpart {
+        display: none;
+        // background: olive;
+    }
+    .anchorparthidden {
+        // display: unset;      idk why this breaks it
+    }
+}
+
+// phone
+@media only screen and (max-width: 550px) {
+    
+}

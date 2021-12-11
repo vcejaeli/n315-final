@@ -1,0 +1,194 @@
+.sales {
+    height: auto;
+    max-width: calc(72vw);
+    margin: 0 auto;
+    // background: coral;
+
+    &__wrap {
+        display: inline;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__row {
+        height: 70vh;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        // background: darkcyan;
+    }
+    &--rowa {
+        // background: darkmagenta;
+    }
+    &__rect {
+        height: 100%;
+        width: 300px;
+        transition: .1s ease-in;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        // background: lightgreen;
+    }
+    &__rect:hover {
+        border: 2px solid #000;
+    }
+    &__rectimg {
+        max-width: 100%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // background: darkkhaki;
+    }
+    &__rectdesc {
+        width: 100%;
+        height: 200px;
+        padding: 0 10px 0 10px;
+        // background: lightgray;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        color: red;
+    }
+    h4 {
+        color: rgb(19, 19, 19);
+    }
+    &__buyctasect {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: palegoldenrod;
+
+        button {
+            width: 80%;
+            height: 48px;
+            font-weight: 400;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid gold;
+            background: white;
+            transition: .3s;
+        }
+        button:hover {
+            border: 2px solid #000;
+        }
+    }
+
+    //adding images
+    &--ra1 {
+        background-image: url('../assets/images/rowa/ra\ 1.png');
+    }
+    &--ra2 {
+        background-image: url('../assets/images/rowa/ra\ 2.png');
+    }
+    &--ra3 {
+        background-image: url('../assets/images/rowa/ra\ 3.png');
+    }
+    &--ra4 {
+        background-image: url('../assets/images/rowa/ra\ 4.png');
+    }
+    // second row
+    &--rb1 {
+        background-image: url('../assets/images/rowb/rb\ 1.png');
+    }
+    &--rb2 {
+        background-image: url('../assets/images/rowb/rb\ 2.png');
+    }
+    &--rb3 {
+        background-image: url('../assets/images/rowb/rb\ 3.png');
+    }
+    &--rb4 {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url('../assets/images/rowb/rb\ 4.png');
+    }
+    // third row
+    &--rc1 {
+        background-image: url('../assets/images/rowc/rc\ 1.png');
+    }
+    &--rc2 {
+        background-image: url('../assets/images/rowc/rc\ 2.png');
+    }
+    &--rc3 {
+        background-image: url('../assets/images/rowc/rc\ 3.png');
+    }
+    &--rc4 {
+        background-image: url('../assets/images/rowc/rc\ 4.png');
+    }
+}
+
+
+
+//ipad pro
+@media only screen and (max-width: 1100px) {
+    .sales {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: teal;
+
+        &__row {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            // background: thistle;
+        }
+        &__rect {
+            height: auto;
+            width: 250px;
+            margin-bottom: 30px;
+            // background: lime;
+        }
+        &__rectimg {
+            max-width: 100%;
+            height: 250px;
+        }
+        &__rectdesc {
+            height: 170px;
+            // background: magenta;
+        }
+    }
+}
+// tablet
+@media only screen and (max-width: 900px) {
+    .sales {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background: teal;
+
+        &__row {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            // background: thistle;
+        }
+        &__rect {
+            height: auto;
+            width: 250px;
+            margin-bottom: 30px;
+            // background: lime;
+        }
+        &__rectimg {
+            max-width: 100%;
+            height: 250px;
+        }
+        &__rectdesc {
+            height: 170px;
+            // background: magenta;
+        }
+    }
+}
+
+
+// phone
+@media only screen and (max-width: 550px) {
+    
+}
