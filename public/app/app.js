@@ -106,11 +106,19 @@ function initListeners() {
         }
     });
 
-    // document.getElementById("signIn").addEventListener("click", function() {
+    // document.getElementById("signIn").addEventListener("click", function(e) {
     //     e.preventDefault();
     //     let btnID = e.currentTarget.id();
     //     console.log(btnID);
-    // })
+
+    //     if(btnID == "createButton") {
+    //                 createUser();
+    //             } else if (btnID == "signInButton") {
+    //                 signIn();
+    //             } else if (btnID == "signOutButton") {
+    //                 signOut();
+    //             }
+    // });
 
     //1:31:00
 }
@@ -130,4 +138,4 @@ $(document).ready(function() {
     }
 });
 
-// FIREBASE BEGINS MAAAAN
+// FIREBASE BEGINS      //ignore
