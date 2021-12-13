@@ -1,13 +1,14 @@
 .hiddenuser {
-    height: calc(90vh);
+    height: auto;
     width: 100%;
+    padding: 40px 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     // background: rgb(20, 89, 216);
 
     &__allwrap {
-        height: 690px;
+        height: auto;
         width: calc(22vw);
         display: inline;
         align-items: center;
@@ -42,7 +43,7 @@
     }
     &__inputs {
         width: 100%;
-        height: 150px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -73,7 +74,8 @@
 
     &__signin {
         width: 100%;
-        height: 120px;
+        height: 180px;
+        // height: auto;        //120
         margin-top: 20px;
         // background: yellow;
 
